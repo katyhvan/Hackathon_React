@@ -1,0 +1,35 @@
+.add-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-title {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+.add-inp {
+  width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 0.5px solid #e8e1e9;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.add-inp:focus {
+  outline: 0.5px solid #373c3c;
+}
+
+.add-btn {
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  width: 10%;
+  padding: 12px 50px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+}

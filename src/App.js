@@ -1,12 +1,15 @@
 import React from "react";
 import MainRoutes from "./MainRoutes";
 import Navbar from "./components/Navbar/Navbar";
+import ClothesContextProvider from "./contexts/ClothesContextProvider";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <MainRoutes />
+      <ClothesContextProvider>
+        <Navbar />
+        <MainRoutes />
+      </ClothesContextProvider>
     </>
   );
 };

@@ -1,4 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import MenuDropDown from "../Menu/MenuDropDown";
+
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -6,12 +9,9 @@ import Menu from "@mui/material/Menu";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "../../styles/Navbar.css";
-
-import { useNavigate } from "react-router-dom";
 
 const pages = [
   {
@@ -30,8 +30,10 @@ const pages = [
     type: "Category",
     path: "/category",
   },
+];
+
+const cartPage = [
   {
-    type: "Cart",
     path: "/cart",
   },
 ];
@@ -64,10 +66,17 @@ function Navbar() {
       <div className="header">
         <div className="navbar-right">
           <img
+            className="logo-img"
             src="https://www.pngall.com/wp-content/uploads/2016/06/Nike-Logo-PNG.png"
             alt="Logo"
             width="50"
+            onClick={() => navigate("/")}
           />
+          <div className="burger-menu">
+            <div className="burger-btn"></div>
+            <div className="burger-btn"></div>
+            <div className="burger-btn"></div>
+          </div>
           <ul className="navbar-menu">
             {pages.map((page) => (
               <li className="item-menu" onClick={() => navigate(page.path)}>
@@ -117,9 +126,15 @@ function Navbar() {
               </MenuItem>
             </Menu>
           </Box>
-          <ShoppingCartIcon className="cart-icon" />
+          {cartPage.map((cartP) => (
+            <ShoppingCartIcon
+              className="cart-icon"
+              onClick={() => navigate(cartP.path)}
+            />
+          ))}
         </div>
       </div>
+      <MenuDropDown />
     </>
   );
 }

@@ -1,0 +1,42 @@
+.product {
+  width: 25%;
+}
+.card-title {
+  height: 50px;
+}
+.card-body {
+  margin: 10px !important;
+}
+
+.card-desc {
+  height: 50px;
+  overflow: auto;
+}
+
+.btn-details {
+  background-color: #82a8f4 !important;
+  color: #fff !important;
+  padding: 5px 15px !important;
+  border-radius: 30px !important;
+}
+
+.btn-edit {
+  background-color: rgb(108, 207, 95) !important;
+  color: #fff !important;
+  padding: 5px 15px !important;
+  border-radius: 30px !important;
+}
+
+.btn-delete {
+  background-color: #e34262 !important;
+  color: #fff !important;
+  padding: 5px 15px !important;
+  border-radius: 30px !important;
+}
+
+.btn-cart {
+  background-color: #42dbe3 !important;
+  color: #fff !important;
+  padding: 5px 15px !important;
+  border-radius: 30px !important;
+}
