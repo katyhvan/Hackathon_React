@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import MenuDropDown from "../Menu/MenuDropDown";
 
@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "../../styles/Navbar.css";
+import { useAuth } from "../../contexts/AuthContextProvider";
 
 const pages = [
   {
@@ -51,6 +52,13 @@ const settings = [
 
 function Navbar() {
   const navigate = useNavigate();
+  const { user, checkAuth, logout } = useAuth();
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      checkAuth();
+    }
+  }, []);
 
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const handleOpenUserMenu = (event) => {
@@ -92,7 +100,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -122,7 +130,9 @@ function Navbar() {
                 </MenuItem>
               ))}
               <MenuItem onClick={handleCloseUserMenu}>
-                <Typography textAlign="center">Logout</Typography>
+                <Typography textAlign="center" onClick={logout}>
+                  Logout
+                </Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -134,7 +144,7 @@ function Navbar() {
           ))}
         </div>
       </div>
-      <MenuDropDown />
+      {/* <MenuDropDown /> */}
     </>
   );
 }

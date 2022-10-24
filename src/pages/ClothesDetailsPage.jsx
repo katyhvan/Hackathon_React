@@ -1,9 +1,10 @@
 import React from "react";
+import ClothesDetails from "../components/clothes/ClothesDetails";
 
 const ClothesDetailsPage = () => {
   return (
     <>
-      <div>ClothesDetailsPage</div>
+      <ClothesDetails />
     </>
   );
 };

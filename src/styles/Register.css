@@ -1,0 +1,35 @@
+.RegisterForm {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  height: 480px;
+  width: 460px;
+  margin: 0 auto;
+  align-content: space-around;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+
+.buttonRegister {
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  width: 440px;
+  border-radius: 35px;
+  border: none;
+  padding: 22px;
+  text-transform: uppercase;
+}
+
+.userNameInp,
+.passwordInp {
+  text-align: center;
+  width: 400px;
+  border-radius: 10px;
+  border-style: double;
+  outline: #fff;
+  padding: 22px;
+  font-size: 20px;
+}

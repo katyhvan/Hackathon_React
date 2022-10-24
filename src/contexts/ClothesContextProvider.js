@@ -26,6 +26,7 @@ const ClothesContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
   const navigate = useNavigate();
 
+  //read
   const getClothes = async () => {
     const { data } = await axios(`${API_CLOTHES}`);
     dispatch({
@@ -34,10 +35,19 @@ const ClothesContextProvider = ({ children }) => {
     });
   };
 
-  //add fuction
+  //add
   const addClothe = async (newClothe) => {
     await axios.post(API_CLOTHES, newClothe);
     getClothes();
+  };
+
+  //details
+  const getClothesDetails = async (id) => {
+    const { data } = await axios(`${API_CLOTHES}/${id}`);
+    dispatch({
+      type: ACTIONS.GET_CLOTHE_DETAILS,
+      payload: data,
+    });
   };
 
   const values = {
@@ -46,6 +56,7 @@ const ClothesContextProvider = ({ children }) => {
 
     addClothe,
     getClothes,
+    getClothesDetails,
   };
 
   return (
