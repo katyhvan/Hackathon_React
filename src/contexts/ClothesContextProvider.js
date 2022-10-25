@@ -28,7 +28,7 @@ const ClothesContextProvider = ({ children }) => {
 
   //read
   const getClothes = async () => {
-    const { data } = await axios(`${API_CLOTHES}`);
+    const { data } = await axios(`${API_CLOTHES}${window.location.search}`);
     dispatch({
       type: ACTIONS.GET_CLOTHES,
       payload: data,

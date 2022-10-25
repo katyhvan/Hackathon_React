@@ -26,18 +26,19 @@ const pages = [
   },
 ];
 
-const MenuDropDown = () => {
+const MenuDropDown = ({ active, setActive }) => {
   const navigate = useNavigate();
   return (
-    <>
-      <div className="menu-dropdown">
-        {pages.map((page) => (
-          <div className="menu-drop" onClick={() => navigate(page.path)}>
-            {page.type}
-          </div>
-        ))}
-      </div>
-    </>
+    <div
+      className={active ? "menu-dropdown active" : "menu-dropdown"}
+      onClick={() => setActive(false)}
+    >
+      {pages.map((page) => (
+        <div className="menu-drop" onClick={() => navigate(page.path)}>
+          {page.type}
+        </div>
+      ))}
+    </div>
   );
 };
 

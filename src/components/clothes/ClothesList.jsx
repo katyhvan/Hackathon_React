@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useClothes } from "../../contexts/ClothesContextProvider";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
 
 import ClothesCard from "./ClothesCard";
-import FilterClothes from "./FilterClothes";
+// import FilterClothes from "./FilterClothes";
 
 const ClothesList = () => {
   const { clothes, getClothes } = useClothes();
@@ -16,7 +16,7 @@ const ClothesList = () => {
   // pagination
   const [page, setPage] = useState(1);
 
-  const itemsOnPage = 6;
+  const itemsOnPage = 5;
 
   const count = Math.ceil(clothes.length / itemsOnPage);
 

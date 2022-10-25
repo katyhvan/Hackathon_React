@@ -21,6 +21,7 @@
   border: none;
   padding: 22px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .userNameInp,
