@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ACTIONS, API_CLOTHES } from "../helpers/consts";
 
-export const clothesContext = createContext();
+const clothesContext = createContext();
 export const useClothes = () => useContext(clothesContext);
 
 const INIT_STATE = {
@@ -16,7 +16,7 @@ const reducer = (state = INIT_STATE, action) => {
     case ACTIONS.GET_CLOTHES:
       return { ...state, clothes: action.payload };
     case ACTIONS.GET_CLOTHE_DETAILS:
-      return { ...state, clothesDetails: action.paylod };
+      return { ...state, clothesDetails: action.payload };
     default:
       return state;
   }
@@ -38,17 +38,32 @@ const ClothesContextProvider = ({ children }) => {
   //add
   const addClothe = async (newClothe) => {
     await axios.post(API_CLOTHES, newClothe);
+    alert("Successfully added new article!");
     getClothes();
   };
 
+  //delete
+  async function deleteClothe(id) {
+    await axios.delete(`${API_CLOTHES}/${id}`);
+    getClothes();
+  }
+
+  //edit logic
   //details
-  const getClothesDetails = async (id) => {
+  async function getClothesDetails(id) {
     const { data } = await axios(`${API_CLOTHES}/${id}`);
+
+    console.log(data);
     dispatch({
       type: ACTIONS.GET_CLOTHE_DETAILS,
       payload: data,
     });
-  };
+  }
+
+  async function saveEditedClothe(newClothe) {
+    await axios.patch(`${API_CLOTHES}/${newClothe.id}`, newClothe);
+    getClothes();
+  }
 
   const values = {
     clothes: state.clothes,
@@ -56,7 +71,9 @@ const ClothesContextProvider = ({ children }) => {
 
     addClothe,
     getClothes,
+    deleteClothe,
     getClothesDetails,
+    saveEditedClothe,
   };
 
   return (

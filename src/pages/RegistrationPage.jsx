@@ -14,7 +14,7 @@ const RegistrationPage = () => {
 
   return (
     <div className="RegisterForm">
-      <h1>Register Form</h1>
+      <h1 className="register-title">Register Form</h1>
       <br />
       <input
         className="userNameInp"

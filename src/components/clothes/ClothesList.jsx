@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useClothes } from "../../contexts/ClothesContextProvider";
 import { useSearchParams } from "react-router-dom";
+import Pagination from "@mui/material/Pagination";
 
 import ClothesCard from "./ClothesCard";
 import FilterClothes from "./FilterClothes";
@@ -11,6 +12,23 @@ const ClothesList = () => {
   useEffect(() => {
     getClothes();
   }, []);
+
+  // pagination
+  const [page, setPage] = useState(1);
+
+  const itemsOnPage = 6;
+
+  const count = Math.ceil(clothes.length / itemsOnPage);
+
+  const handlePage = (e, p) => {
+    setPage(p);
+  };
+
+  function currentData() {
+    const begin = (page - 1) * itemsOnPage;
+    const end = begin + itemsOnPage;
+    return clothes.slice(begin, end);
+  }
 
   return (
     <>
@@ -24,10 +42,23 @@ const ClothesList = () => {
         }}
       >
         {clothes ? (
-          clothes.map((item) => <ClothesCard key={item.id} item={item} />)
+          currentData().map((item) => <ClothesCard key={item.id} item={item} />)
         ) : (
           <h3>Loading...</h3>
         )}
+      </div>
+      <div>
+        <Pagination
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "1%",
+          }}
+          className="pagination"
+          count={count}
+          page={page}
+          onChange={handlePage}
+        />
       </div>
     </>
   );

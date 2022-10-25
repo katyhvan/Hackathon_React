@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-export const authContex = React.createContext();
+const authContex = React.createContext();
 export const useAuth = () => useContext(authContex);
 
 const API = "http://35.239.251.89/";

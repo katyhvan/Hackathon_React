@@ -3,4 +3,9 @@ export const ACTIONS = {
   GET_CLOTHE_DETAILS: "GET_CLOTHE_DETAILS",
 };
 
+export const CART = {
+  GET_CART: "GET_CART",
+  GET_CART_LENGTH: "GET_CART_LENGTH",
+};
+
 export const API_CLOTHES = "http://localhost:5000/clothes";

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import MenuDropDown from "../Menu/MenuDropDown";
+// import MenuDropDown from "../Menu/MenuDropDown";
 
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
@@ -87,7 +87,11 @@ function Navbar() {
           </div>
           <ul className="navbar-menu">
             {pages.map((page) => (
-              <li className="item-menu" onClick={() => navigate(page.path)}>
+              <li
+                style={{ cursor: "pointer" }}
+                className="item-menu"
+                onClick={() => navigate(page.path)}
+              >
                 {page.type}
               </li>
             ))}
@@ -100,7 +104,11 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt={user} src="/static/images/avatar/2.jpg" />
+                <Avatar
+                  style={{ cursor: "pointer" }}
+                  alt={user}
+                  src="/static/images/avatar/2.jpg"
+                />
               </IconButton>
             </Tooltip>
             <Menu
@@ -138,6 +146,7 @@ function Navbar() {
           </Box>
           {cartPage.map((cartP) => (
             <ShoppingCartIcon
+              style={{ cursor: "pointer" }}
               className="cart-icon"
               onClick={() => navigate(cartP.path)}
             />

@@ -10,13 +10,15 @@ import {
   Button,
   Typography,
 } from "@mui/material";
+
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const ClothesDetails = () => {
   const { id } = useParams();
-  const { clothesDetails, getClothesDetails } = useClothes();
+  const { clothesDetails, getClothesDetails, deleteClothe } = useClothes();
 
   const navigate = useNavigate();
+  console.log(clothesDetails);
 
   useEffect(() => {
     getClothesDetails(id);
@@ -25,7 +27,7 @@ const ClothesDetails = () => {
   return (
     <>
       {clothesDetails ? (
-        <div>
+        <div style={{ margin: "5% 40%" }}>
           <Card sx={{ maxWidth: 400 }}>
             <CardMedia
               className="card-image"
@@ -76,9 +78,9 @@ const ClothesDetails = () => {
               <Button
                 className="btn-details"
                 size="small"
-                onClick={() => navigate(`/details/${clothesDetails.id}`)}
+                onClick={() => navigate(`/clothes`)}
               >
-                Details
+                Clothes
               </Button>
               <Button
                 className="btn-edit"
@@ -90,7 +92,7 @@ const ClothesDetails = () => {
               <Button
                 className="btn-delete"
                 size="small"
-                // onClick={() => deleteProduct(item.id)}
+                onClick={() => deleteClothe(clothesDetails.id)}
               >
                 Delete
               </Button>

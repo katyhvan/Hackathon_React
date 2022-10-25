@@ -3,7 +3,7 @@
     {
       "title": "Nike Air Force 1'07 ",
       "desc": "Men's shoes",
-      "price": "$110",
+      "price": 3000,
       "img": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/350e7f3a-979a-402b-9396-a8a998dd76ab/air-force-1-07-mens-shoes-xDpsTk.png",
       "type": "men",
       "category": "shoes",
@@ -12,7 +12,7 @@
     {
       "title": "Air Jordan 1 Low",
       "desc": "Men's Shoes",
-      "price": "$110",
+      "price": 1100,
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bfeeadd5-7433-486d-a0e5-c1f9e35f28cb/air-jordan-1-low-mens-shoes-9xSzrW.png",
       "type": "men",
       "category": "shoes",
@@ -21,7 +21,7 @@
     {
       "title": "Nike Utility Elite",
       "desc": "Backpack (32L)",
-      "price": "$110",
+      "price": 1500,
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/647265c2-6b90-44c0-a631-903113fdab4c/utility-elite-backpack-32l-9QVM3f.png",
       "type": "men",
       "category": "accessories",
@@ -30,7 +30,7 @@
     {
       "title": "Nike Dri-FIT Element",
       "desc": "Men's 1/2-Zip Running Top",
-      "price": "$78",
+      "price": "78",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8256e50d-828e-40cb-96f1-f00cd45fd376/dri-fit-element-mens-1-2-zip-running-top-DmdwcX.png",
       "type": "men",
       "category": "t-shirt",
@@ -39,7 +39,7 @@
     {
       "title": "Nike Solo Swoosh",
       "desc": "Men's Full-Zip Hoodie",
-      "price": "$100",
+      "price": "100",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b0f6e7d7-bd34-4d18-a7c7-653dc3d6efd5/solo-swoosh-mens-full-zip-hoodie-8bKgZZ.png",
       "type": "men",
       "category": "hoodies",
@@ -48,7 +48,7 @@
     {
       "title": "Jordan Skills",
       "desc": "Basketball (Size 3)",
-      "price": "$15",
+      "price": "15",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/acnpqwhurnfadfajyg5f/jordan-skills-basketball-size-3-4Jf9fd.png",
       "type": "womens",
       "category": "accessories",
@@ -57,25 +57,16 @@
     {
       "title": "Nike Solid Puffer Jacket",
       "desc": "Toddler Jacket",
-      "price": "$95",
+      "price": "95",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/0704d346-a998-4b1b-ad73-40dfdc9622e5/solid-puffer-jacket-toddler-jacket-sLTM3d.png",
       "type": "kids",
       "category": "jackets",
       "id": "7"
     },
     {
-      "title": "Nike",
-      "desc": "Women's Fleece Headband",
-      "price": "$22",
-      "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/5132ebdc-5a5b-46e0-a72a-351563591974/womens-fleece-headband-TJlSWV.png",
-      "type": "women",
-      "category": "accessories",
-      "id": "8"
-    },
-    {
       "title": "Nike Sportswear",
       "desc": "Women's Woven Jacket",
-      "price": "$40.97",
+      "price": "40.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2ae909a7-769d-4eac-a0c9-abd0b283a0a1/sportswear-womens-woven-jacket-h0fh1g.png",
       "type": "women",
       "category": "jackets",
@@ -84,7 +75,7 @@
     {
       "title": "Nike Sportswear",
       "desc": "Men's French Terry Pants",
-      "price": "$90",
+      "price": "90",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/52ae7ff2-0aa1-471e-a7a3-cb5535a1d994/sportswear-mens-french-terry-pants-LQLRKd.png",
       "type": "men",
       "category": "pants",
@@ -93,7 +84,7 @@
     {
       "title": "KD15 'Napheesa Collier'",
       "desc": "Basketball Shoes",
-      "price": "$150",
+      "price": "150",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d2c26f8e-5170-4575-a687-da881d2aa904/kd15-napheesa-collier-basketball-shoes-10P3rj.png",
       "type": "women",
       "category": "shoes",
@@ -102,7 +93,7 @@
     {
       "title": "Nike",
       "desc": "Women's Fleece Mittens",
-      "price": "$45",
+      "price": "45",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/4337df12-244a-4f83-86e7-cb1611d1bd7a/womens-fleece-mittens-QS2Zw7.png",
       "type": "women",
       "category": "accessories",
@@ -111,7 +102,7 @@
     {
       "title": "Jordan",
       "desc": "Big Kids' Throwback Graphic T-Shirt",
-      "price": "$32",
+      "price": "32",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/ffa28348-03a2-4dca-9144-439cffb3498d/jordan-big-kids-throwback-graphic-t-shirt-MWMSpx.png",
       "type": "kids",
       "category": "t-shirt",
@@ -120,7 +111,7 @@
     {
       "title": "Nike Sportswear",
       "desc": "Men's French Terry Crew",
-      "price": "$90",
+      "price": "90",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9c0bd619-2fd3-4a71-8d72-27d390fcbd73/sportswear-mens-french-terry-crew-Gs3wz0.png",
       "type": "men",
       "category": "hoodies",
@@ -129,7 +120,7 @@
     {
       "title": "Nike Brasilia",
       "desc": "Kids' Printed Backpack (18L)",
-      "price": "$35",
+      "price": "35",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d583dca9-c400-4bec-ac94-c7441b849d7c/brasilia-kids-printed-backpack-18l-ntjwlk.png",
       "type": "kids",
       "category": "accessories",
@@ -138,7 +129,7 @@
     {
       "title": "Jordan x Eastside Golf",
       "desc": "Unisex Cap",
-      "price": "$50",
+      "price": "50",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/5731bbc8-a3b4-4dbb-84b2-f0a3a936808c/jordan-x-eastside-golf-unisex-cap-9NV4Rf.png",
       "type": "women",
       "category": "accessories",
@@ -147,7 +138,7 @@
     {
       "title": "Nike Air Zoom G.T. Jump",
       "desc": "Basketball Shoes",
-      "price": "$153.97",
+      "price": "153.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/915b967f-c5d6-462f-9f65-0fa3704c5adb/air-zoom-gt-jump-basketball-shoes-Mj4kHp.png",
       "type": "women",
       "category": "shoes",
@@ -156,7 +147,7 @@
     {
       "title": "Nike Sportswear",
       "desc": "Men's T-Shirt",
-      "price": "$45.97",
+      "price": "45.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/aed62f74-1171-43ec-a148-290f4a75ee07/sportswear-mens-t-shirt-NQQxNp.png",
       "type": "men",
       "category": "t-shirt",
@@ -165,7 +156,7 @@
     {
       "title": "Nike Sportswear",
       "desc": "Women's Jersey Shorts",
-      "price": "$25.97",
+      "price": "25.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0a36e93a-4afd-466a-aaab-c3207cfd81d4/sportswear-womens-jersey-shorts-CG4Ctc.png",
       "type": "women",
       "category": "shorts",
@@ -174,7 +165,7 @@
     {
       "title": "Nike Evolution",
       "desc": "Polarized Sunglasses",
-      "price": "$200",
+      "price": "200",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a5e45697-5bb5-4e5b-b2fa-00617883a4eb/evolution-polarized-sunglasses-NzGKXz.png",
       "type": "women",
       "category": "accessories",
@@ -183,7 +174,7 @@
     {
       "title": "Nike Solo Swoosh",
       "desc": "Women's T-Shirt",
-      "price": "$34.97",
+      "price": "34.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/001dfcab-7460-4a07-9cfa-38ce3a457130/solo-swoosh-womens-t-shirt-34z3DC.png",
       "type": "women",
       "category": "t-shirts",
@@ -192,7 +183,7 @@
     {
       "title": "Nike Air More Uptempo",
       "desc": "Big Kids' Shoes",
-      "price": "$140",
+      "price": "140",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/34259527-c1ca-4862-b6b4-2efabb7b60d3/air-more-uptempo-big-kids-shoes-XXS2f0.png",
       "type": "kids",
       "category": "shoes",
@@ -201,7 +192,7 @@
     {
       "title": "Nike Solo Swoosh",
       "desc": "Men's Fleece Pants",
-      "price": "$90",
+      "price": "90",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0dd2c1cb-4a1c-42e1-950b-bddc4d16ee84/solo-swoosh-mens-fleece-pants-90h6N2.png",
       "type": "men",
       "category": "pants",
@@ -210,7 +201,7 @@
     {
       "title": "Nike",
       "desc": "Toddler Bucket Hat",
-      "price": "$15.97",
+      "price": "15.97",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/i1-2b98d5db-2035-4763-b6fe-e6488dcf68f3/toddler-bucket-hat-9Zv96W.png",
       "type": "kids",
       "category": "accessories",
@@ -219,7 +210,7 @@
     {
       "title": "Nike Sportswear Everyday Modern",
       "desc": "Women's Allover Jacquard Boxy Top",
-      "price": "$52",
+      "price": "52",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/af4d3b78-4b2d-47a5-9d02-d39c89e92b56/sportswear-everyday-modern-womens-allover-jacquard-boxy-top-r28R6g.png",
       "type": "women",
       "category": "t-shirts",
@@ -228,7 +219,7 @@
     {
       "title": "Jordan 5 Retro",
       "desc": "Little Kids' Shoes",
-      "price": "$90",
+      "price": "90",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/27a8ea55-1d36-40f9-b07a-5ee431a39d2b/jordan-5-retro-little-kids-shoes-NXVBZ9.png",
       "type": "kids",
       "category": "shoes",
@@ -237,7 +228,7 @@
     {
       "title": "Nike Tempo Luxe",
       "desc": "Women's 3' Running Shorts",
-      "price": "$27.97",
+      "price": "27.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b82a669e-093e-498b-b007-40e4fb2cba91/tempo-luxe-womens-3-running-shorts-8x2Wmc.png",
       "type": "women",
       "category": "shorts",
@@ -246,7 +237,7 @@
     {
       "title": "Nike Sportswear Sport Essentials",
       "desc": "Men's Woven Unlined Bomber Jacket",
-      "price": "$71.97",
+      "price": "71.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2420ea47-056d-4bac-899f-0aa2e40269aa/sportswear-sport-essentials-mens-woven-unlined-bomber-jacket-GsNVsM.png",
       "type": "men",
       "category": "jackets",
@@ -255,7 +246,7 @@
     {
       "title": "Nike Dri-FIT",
       "desc": "Big Kids' (Boys') Training Shorts",
-      "price": "$35",
+      "price": "35",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2c202d67-015c-4a97-b295-3fb0d4f94f31/dri-fit-big-kids-boys-training-shorts-fjl3TS.png",
       "type": "kids",
       "category": "shorts",
@@ -264,7 +255,7 @@
     {
       "title": "Nike Everyday Plus Cushioned",
       "desc": "Chaussettes mi-mollet (6 paires)",
-      "price": "28 $",
+      "price": "28 ",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/53a8be53-2e09-443d-850b-2ee39d186b0f/chaussettes-mi-mollet-everyday-plus-cushioned-WvLpk7.png",
       "type": "kids",
       "category": "accessories",
@@ -273,7 +264,7 @@
     {
       "title": "Nike Sportswear Phoenix Fleece",
       "desc": "Women's Over-Oversized Pullover Hoodie",
-      "price": "$70",
+      "price": "70",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bb009603-d7e5-4d7e-8e60-c446273d90d9/sportswear-phoenix-fleece-womens-over-oversized-pullover-hoodie-RrzVXL.png",
       "type": "women",
       "category": "hoodies",
@@ -282,7 +273,7 @@
     {
       "title": "Jordan Essential",
       "desc": "Men's Puffer Jacket",
-      "price": "$185",
+      "price": "185",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fdce687b-14c3-480d-9632-3aedf2410270/jordan-essential-mens-puffer-jacket-P6D9DF.png",
       "type": "men",
       "category": "jackets",
@@ -291,7 +282,7 @@
     {
       "title": "Nike Sportswear Storm-FIT Windrunner",
       "desc": "Men's PRIMALOFT® Jacket",
-      "price": "$200",
+      "price": "200",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/351efa2e-71db-4ea9-92ee-caaef68ffcc8/sportswear-storm-fit-windrunner-mens-primaloft-jacket-5p3NMK.png",
       "type": "men",
       "category": "jackets",
@@ -300,7 +291,7 @@
     {
       "title": "NNike Sportswear Essential Collection",
       "desc": "Pantalon en tissu Fleece pour Femme",
-      "price": "65,99 $",
+      "price": "65,99 ",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/7a93d732-77fc-4a48-9f9d-29002501355e/pantalon-en-tissu-fleece-sportswear-essential-collection-pour-k62xpw.png",
       "type": "women",
       "category": "pantalon",
@@ -309,7 +300,7 @@
     {
       "title": "Nike Air Force 1 Mid '07 LV8",
       "desc": "Men's Shoes",
-      "price": "$140",
+      "price": "140",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cd4e5fb3-f890-42b4-b7dc-cef498ab072a/air-force-1-mid-07-lv8-mens-shoes-vSC6zC.png",
       "type": "men",
       "category": "shoes",
@@ -318,7 +309,7 @@
     {
       "title": "Nike Sportswear",
       "desc": "Big Kids' (Boys') Pullover Hoodie (Extended Size)",
-      "price": "$50",
+      "price": "50",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/447a4c50-c170-4497-b58b-6e2fa0147f07/sportswear-big-kids-boys-pullover-hoodie-extended-size-8d2C6S.png",
       "type": "kids",
       "category": "hoodies",
@@ -327,7 +318,7 @@
     {
       "title": "Nike Everyday Plus Cushioned",
       "desc": "Crew Socks (2 Pairs)",
-      "price": "$18",
+      "price": "18",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/30dbc276-f7a9-4c2c-badf-9c2a7afa8b1a/everyday-plus-cushioned-crew-socks-2-pairs-03kH4r.png",
       "type": "men",
       "category": "accessories",
@@ -336,7 +327,7 @@
     {
       "title": "Nike Sportswear Essential Repel",
       "desc": "Women's Woven Jacket",
-      "price": "$57.97",
+      "price": "57.97",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3a42f2f8-5330-44ad-8fe7-7a7d816859c6/sportswear-essential-repel-womens-woven-jacket-1cJdBH.png",
       "type": "women",
       "category": "jackets",
@@ -345,7 +336,7 @@
     {
       "title": "Nike Sportswear Phoenix Fleece",
       "desc": "Women's Over-Oversized Crewneck Sweatshirt",
-      "price": "$65",
+      "price": "65",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b6c14017-1a95-4e46-9164-defaedb0392c/sportswear-phoenix-fleece-womens-over-oversized-crewneck-sweatshirt-Wj2Rd6.png",
       "type": "women",
       "category": "hoodies",
@@ -354,7 +345,7 @@
     {
       "title": "Apple Watch Series 7 (GPS + Cellular) With Nike Sport Band",
       "desc": "41mm Midnight Aluminium Case",
-      "price": "$499",
+      "price": "499",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e0eae84b-78e8-4b79-bf97-d54c43311350/apple-watch-series-7-gps-cellular-with-sport-band-41mm-midnight-aluminium-case-l2VbN2.png",
       "type": "men",
       "category": "accessories",
@@ -363,7 +354,7 @@
     {
       "title": "Nike Sportswear Tech Fleece",
       "desc": "Men's Crew Sweatshirt",
-      "price": "$100",
+      "price": "100",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8f28f622-eda8-4eee-b9c9-2df14910010c/sportswear-tech-fleece-mens-crew-sweatshirt-pfjm2W.png",
       "type": "men",
       "category": "hoodies",
@@ -372,7 +363,7 @@
     {
       "title": "Nike Sportswear Heritage86 Futura Washed",
       "desc": "Hat",
-      "price": "$24",
+      "price": "24",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/f92c44fe-7fed-4f00-8123-8b8dd3cbe413/sportswear-heritage86-futura-washed-hat-9xDxge.png",
       "type": "men",
       "category": "accessories",
@@ -381,7 +372,7 @@
     {
       "title": "Nike Air Force 1 High SE",
       "desc": "Women's Shoes",
-      "price": "$135",
+      "price": "135",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ba3c508a-5e6b-47af-a515-b2e0ab744584/air-force-1-high-se-womens-shoes-X6v8pV.png",
       "type": "women",
       "category": "shoes",
@@ -390,7 +381,7 @@
     {
       "title": "Jordan Jumpman",
       "desc": "Washed Bucket Hat",
-      "price": "$30",
+      "price": "30",
       "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/7368efbb-933b-4f96-9ed5-705802be2a94/jordan-jumpman-washed-bucket-hat-rBLkPt.png",
       "type": "men",
       "category": "accessories",
@@ -399,7 +390,7 @@
     {
       "title": "Nike Club Skirt",
       "desc": "Women's Regular Tennis Skirt",
-      "price": "$75",
+      "price": "75",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cad3fd2d-ad3b-4266-b4e8-93c7872f811d/club-skirt-womens-regular-tennis-skirt-8X2d16.png",
       "type": "women",
       "category": "skirts",
@@ -408,7 +399,7 @@
     {
       "title": "Nike Sportswear Club Fleece",
       "desc": "Women's Mid-Rise Oversized Sweatpants",
-      "price": "$50",
+      "price": "50",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/53510f87-c8be-45d5-97eb-c3c258e6a8ed/sportswear-club-fleece-womens-mid-rise-oversized-sweatpants-t9VhDV.png",
       "type": "women",
       "category": "pants",
@@ -417,7 +408,7 @@
     {
       "title": "Nike",
       "desc": "Slim Running Fanny Pack",
-      "price": "$22",
+      "price": "22",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8e6553f4-e73c-4dcb-a6f2-4c2a6292ce8e/slim-running-fanny-pack-0c4pX1.png",
       "type": "men",
       "category": "accessories",
@@ -426,7 +417,7 @@
     {
       "title": "NikeCourt Dri-FIT Advantage",
       "desc": "Women's Pleated Tennis Skirt",
-      "price": "$75",
+      "price": "75",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/cfee85dc-4941-472a-b58a-255e0749fd55/nikecourt-dri-fit-advantage-womens-pleated-tennis-skirt-dMLP0W.png",
       "type": "women",
       "category": "skirts",
@@ -435,7 +426,7 @@
     {
       "title": "NikeCourt Victory",
       "desc": "Women's Tennis Polo",
-      "price": "$58",
+      "price": "58",
       "img": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5dd32170-6d8e-40b3-b8dd-0dde4ae13b26/nikecourt-victory-womens-tennis-polo-J22Hv8.png",
       "type": "women",
       "category": "t-shirt",
@@ -449,15 +440,6 @@
       "type": "women",
       "category": "skirts",
       "id": "50"
-    },
-    {
-      "title": "product",
-      "desc": "vcvvccv",
-      "price": 12,
-      "img": "fdfg",
-      "type": "fdfg",
-      "category": "gdfg",
-      "id": "9dkqdMs"
     }
   ]
 }

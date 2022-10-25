@@ -1,9 +1,10 @@
 import React from "react";
+import EditClothes from "../components/clothes/EditClothes";
 
 const EditClothesPage = () => {
   return (
     <>
-      <div>EditClothesPage</div>
+      <EditClothes />
     </>
   );
 };

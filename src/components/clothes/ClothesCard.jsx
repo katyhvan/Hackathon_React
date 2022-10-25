@@ -1,5 +1,6 @@
 import React from "react";
 import { useClothes } from "../../contexts/ClothesContextProvider";
+import { useCart } from "../../contexts/CartContextProvider";
 import { useNavigate } from "react-router-dom";
 
 import "../../styles/ClothesCard.css";
@@ -16,7 +17,10 @@ import {
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const ClothesCard = ({ item }) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+
+  const { deleteClothe } = useClothes();
+  const { addClotheToCart } = useCart();
 
   return (
     <>
@@ -43,7 +47,7 @@ const ClothesCard = ({ item }) => {
               color="text.secondary"
               className="card-body"
             >
-              <strong>{item.price}</strong>
+              <strong>$ {item.price}</strong>
             </Typography>
             <Typography
               variant="body2"
@@ -71,28 +75,28 @@ const ClothesCard = ({ item }) => {
             <Button
               className="btn-details"
               size="small"
-              // onClick={() => navigate(`/details/${item.id}`)}
+              onClick={() => navigate(`/details/${item.id}`)}
             >
               Details
             </Button>
             <Button
               className="btn-edit"
               size="small"
-              // onClick={() => navigate(`/edit/${item.id}`)}
+              onClick={() => navigate(`/edit/${item.id}`)}
             >
               Edit
             </Button>
             <Button
               className="btn-delete"
               size="small"
-              // onClick={() => deleteProduct(item.id)}
+              onClick={() => deleteClothe(item.id)}
             >
               Delete
             </Button>
             <Button
               className="btn-cart"
               size="small"
-              // onClick={() => addProductToCart(item)}
+              onClick={() => addClotheToCart(item)}
             >
               <AddShoppingCartIcon />
             </Button>
