@@ -2,6 +2,7 @@ import React from "react";
 import { useClothes } from "../../contexts/ClothesContextProvider";
 import { useCart } from "../../contexts/CartContextProvider";
 import { useNavigate } from "react-router-dom";
+import Like from "../Like/Like";
 
 import "../../styles/ClothesCard.css";
 
@@ -34,14 +35,17 @@ const ClothesCard = ({ item }) => {
             image={item.img}
           />
           <CardContent>
-            <Typography
-              className="card-title"
-              gutterBottom
-              variant="h5"
-              component="div"
-            >
-              {item.title}
-            </Typography>
+            <div className="card-like">
+              <Typography
+                className="card-title"
+                gutterBottom
+                variant="h5"
+                component="div"
+              >
+                {item.title}
+              </Typography>
+              <Like />
+            </div>
             <Typography
               variant="body1"
               color="text.secondary"

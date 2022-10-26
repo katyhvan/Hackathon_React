@@ -15,7 +15,8 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const ClothesDetails = () => {
   const { id } = useParams();
-  const { clothesDetails, getClothesDetails, deleteClothe } = useClothes();
+  const { clothesDetails, getClothesDetails, deleteClothe, addClotheToCart } =
+    useClothes();
 
   const navigate = useNavigate();
   console.log(clothesDetails);
@@ -99,7 +100,7 @@ const ClothesDetails = () => {
               <Button
                 className="btn-cart"
                 size="small"
-                // onClick={() => addProductToCart(item)}
+                onClick={() => addClotheToCart(clothesDetails)}
               >
                 <AddShoppingCartIcon />
               </Button>

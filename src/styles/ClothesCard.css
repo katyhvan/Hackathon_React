@@ -1,6 +1,12 @@
 .card-title {
   height: 50px;
 }
+
+.card-like {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card-body {
   margin: 10px !important;
 }

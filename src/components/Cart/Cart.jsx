@@ -106,12 +106,16 @@ export default function Cart() {
               </StyledTableRow>
             ))}
           </TableBody>
-          <Typography variant="h6" component="div">
-            Total price: {cart?.totalPrice}
-            <Button>BUY NOW</Button>
-          </Typography>
         </Table>
       </TableContainer>
+      <Typography
+        variant="h6"
+        component="div"
+        style={{ textAlign: "right", marginRight: "15%" }}
+      >
+        Total price: {cart?.totalPrice}
+        <Button>BUY NOW</Button>
+      </Typography>
     </>
   );
 }
