@@ -1,15 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import HomeIcon from "@mui/icons-material/Home";
 import "../../styles/MenuDropDown.css";
 
 const pages = [
   {
-    type: "Home",
+    type: <HomeIcon />,
     path: "/",
   },
   {
-    type: "Sport Clothes",
+    type: "Clothes",
     path: "/clothes",
   },
   {

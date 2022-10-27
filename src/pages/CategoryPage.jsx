@@ -1,9 +1,9 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Categories from "../components/Categories/Categories";
 const CategoryPage = () => {
   return (
     <>
-      <div>CategoryPage</div>
+      <Categories />
     </>
   );
 };

@@ -6,11 +6,7 @@ const Like = () => {
   const [like, setLike] = useState(false);
   return (
     <div onClick={() => setLike(!like)}>
-      {like ? (
-        <FavoriteIcon style={{ color: "red" }} />
-      ) : (
-        <FavoriteBorderIcon />
-      )}
+      {like ? <FavoriteIcon /> : <FavoriteBorderIcon />}
     </div>
   );
 };

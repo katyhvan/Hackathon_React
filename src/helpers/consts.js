@@ -9,3 +9,4 @@ export const CART = {
 };
 
 export const API_CLOTHES = "http://localhost:5000/clothes";
+export const API_ORDERS = "http://localhost:5000/orders";

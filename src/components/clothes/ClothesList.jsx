@@ -4,7 +4,7 @@ import { useClothes } from "../../contexts/ClothesContextProvider";
 import Pagination from "@mui/material/Pagination";
 
 import ClothesCard from "./ClothesCard";
-// import FilterClothes from "./FilterClothes";
+import FilterClothes from "./FilterClothes";
 
 const ClothesList = () => {
   const { clothes, getClothes } = useClothes();
@@ -32,6 +32,7 @@ const ClothesList = () => {
 
   return (
     <>
+      <FilterClothes />
       <div
         style={{
           margin: "20px",

@@ -441,5 +441,25 @@
       "category": "skirts",
       "id": "50"
     }
+  ],
+  "orders": [
+    {
+      "name": "Sam",
+      "phone": "8799",
+      "email": "sam@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Ramo",
+      "phone": "8781212",
+      "email": "ramo@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Kuba",
+      "phone": "555218",
+      "email": "kuba@gmail.com",
+      "id": 3
+    }
   ]
 }

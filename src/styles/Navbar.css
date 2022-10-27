@@ -1,10 +1,10 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   padding: 0.5% 2%;
-  align-items: center;
   background-color: #000;
   font-family: "Roboto";
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
@@ -26,6 +26,7 @@
 .navbar-right,
 .navbar-left {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 7px;
 }

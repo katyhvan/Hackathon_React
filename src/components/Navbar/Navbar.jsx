@@ -13,15 +13,16 @@ import "../../styles/Navbar.css";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { useSearchParams } from "react-router-dom";
 import { useClothes } from "../../contexts/ClothesContextProvider";
-import ClothesCard from "../clothes/ClothesCard";
-// import ClothesList from "../clothes/ClothesList";
+import HomeIcon from "@mui/icons-material/Home";
+import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
+
 const pages = [
   {
-    type: "Home",
+    type: <HomeIcon />,
     path: "/",
   },
   {
-    type: "Sport Clothes",
+    type: "Clothes",
     path: "/clothes",
   },
   {
@@ -29,7 +30,7 @@ const pages = [
     path: "/admin",
   },
   {
-    type: "Category",
+    type: <CategoryDropDown />,
     path: "/category",
   },
 ];
@@ -59,29 +60,27 @@ function Navbar() {
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
-  // const ClothesList = () => {
+
   const { clothes, getClothes } = useClothes();
+
   useEffect(() => {
     getClothes();
   }, []);
+
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(searchParams.get("q") || "");
+
   useEffect(() => {
-    // console.log(
-    //   "Сработал юз эффект для местного состояния, установка параметров запроса"
-    // );
     setSearchParams({
       q: search,
     });
   }, [search]);
+
   useEffect(() => {
-    // console.log(
-    //   "Сработал юз эффект, который следит за изменением параметров запроса, вызвана функция получения всех продуктов(с параметрами запроса)"
-    // );
     getClothes();
   }, [searchParams]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (localStorage.getItem("token")) {
       checkAuth();
     }
@@ -94,7 +93,7 @@ function Navbar() {
   return (
     <>
       <div className="header">
-        <div className="navbar-right">
+        <div className="navbar-left">
           <img
             className="logo-img"
             src="https://miro.medium.com/max/900/0*9hcinRdaHicrNpNE.jpg"
@@ -139,12 +138,17 @@ function Navbar() {
             label="Search"
           />
         </div>
-        <div className="navbar-left">
+        <div className="navbar-right">
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
-                  style={{ cursor: "pointer" }}
+                  style={{
+                    cursor: "pointer",
+                    fontSize: "2vw",
+                    width: "3vw",
+                    height: "3vw",
+                  }}
                   alt={user}
                   src="/static/images/avatar/2.jpg"
                 />
@@ -185,7 +189,7 @@ function Navbar() {
           </Box>
           {cartPage.map((cartP) => (
             <ShoppingCartIcon
-              style={{ cursor: "pointer" }}
+              style={{ cursor: "pointer", fontSize: "2vw" }}
               className="cart-icon"
               onClick={() => navigate(cartP.path)}
             />

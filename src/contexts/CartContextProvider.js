@@ -1,10 +1,12 @@
 import React, { createContext, useContext, useReducer } from "react";
-import { CART } from "../helpers/consts";
+import { API_ORDERS, CART } from "../helpers/consts";
 import {
   getCountClothesInCart,
   calcSubPrice,
   calcTotalPrice,
 } from "../helpers/functions";
+
+import axios from "axios";
 
 const cartContext = createContext();
 export const useCart = () => useContext(cartContext);
@@ -129,6 +131,12 @@ const CartContextProvider = ({ children }) => {
     });
   }
 
+  //add order
+  const addOrder = (newOrder) => {
+    axios.post(API_ORDERS, newOrder);
+    alert("You ordered successfully");
+  };
+
   const values = {
     cart: state.cart,
     cartLength: state.cartLength,
@@ -137,11 +145,12 @@ const CartContextProvider = ({ children }) => {
     addClotheToCart,
     changeClotheCount,
     deleteClotheInCart,
+    addOrder,
   };
 
   return (
     <>
-      <cartContext.Provider value={values}>{children}</cartContext.Provider>;
+      <cartContext.Provider value={values}>{children}</cartContext.Provider>
     </>
   );
 };

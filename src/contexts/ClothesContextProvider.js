@@ -25,10 +25,11 @@ const reducer = (state = INIT_STATE, action) => {
 const ClothesContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
   const navigate = useNavigate();
+  const location = useLocation();
 
   //read
   const getClothes = async () => {
-    const { data } = await axios(`${API_CLOTHES}${window.location.search}`);
+    const { data } = await axios(`${API_CLOTHES}/${window.location.search}`);
     dispatch({
       type: ACTIONS.GET_CLOTHES,
       payload: data,
@@ -65,6 +66,21 @@ const ClothesContextProvider = ({ children }) => {
     getClothes();
   }
 
+  //filter
+  const fetchByParams = (query, value) => {
+    const search = new URLSearchParams(location.search);
+
+    if (value === "all") {
+      search.delete(query);
+    } else {
+      search.set(query, value);
+    }
+
+    const url = `${location.pathname}?${search.toString()}`;
+
+    navigate(url);
+  };
+
   const values = {
     clothes: state.clothes,
     clothesDetails: state.clothesDetails,
@@ -74,12 +90,11 @@ const ClothesContextProvider = ({ children }) => {
     deleteClothe,
     getClothesDetails,
     saveEditedClothe,
+    fetchByParams,
   };
 
   return (
-    <clothesContext.Provider value={values}>
-      {children};
-    </clothesContext.Provider>
+    <clothesContext.Provider value={values}>{children}</clothesContext.Provider>
   );
 };
 

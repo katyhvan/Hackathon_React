@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -8,6 +9,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { TextField, Button, Typography } from "@mui/material";
+
+import Modal from "react-bootstrap/Modal";
+import Box from "@mui/material/Box";
+import SendIcon from "@mui/icons-material/Send";
+import Stack from "@mui/material/Stack";
+import "../../styles/Cart.css";
 
 import { useCart } from "../../contexts/CartContextProvider";
 
@@ -44,7 +51,10 @@ const rows = [
 ];
 
 export default function Cart() {
-  const { cart, getCart, changeClotheCount, deleteClotheInCart } = useCart();
+  const navigate = useNavigate();
+  const { cart, getCart, changeClotheCount, deleteClotheInCart, addOrder } =
+    useCart();
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     getCart();
@@ -54,6 +64,33 @@ export default function Cart() {
     localStorage.removeItem("cart");
     getCart();
   }
+
+  let [order, setOrder] = useState({
+    name: "",
+    phone: "",
+    email: "",
+  });
+
+  function handleInp(e) {
+    let obj = {
+      ...order,
+      [e.target.name]: e.target.value,
+    };
+
+    setOrder(obj);
+
+    order = {
+      name: "",
+      phone: "",
+      email: "",
+    };
+  }
+
+  const handleClose = () => {
+    setShow(false);
+  };
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <TableContainer component={Paper} style={{ marginTop: "50px" }}>
@@ -114,7 +151,70 @@ export default function Cart() {
         style={{ textAlign: "right", marginRight: "15%" }}
       >
         Total price: {cart?.totalPrice}
-        <Button>BUY NOW</Button>
+        <Button className="btn-buy" onClick={handleShow}>
+          BUY NOW
+        </Button>
+        <Modal className="modalka" show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Order Form</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Box
+              component="form"
+              sx={{
+                "& > :not(style)": { m: 1, width: "40ch" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField
+                id="standard-basic"
+                label="Username"
+                name="name"
+                variant="standard"
+                onChange={handleInp}
+                value={order.name}
+              />
+              <br />
+              <TextField
+                id="standard-basic"
+                label="Phone Number"
+                name="phone"
+                variant="standard"
+                onChange={handleInp}
+                value={order.phone}
+              />
+              <br />
+              <TextField
+                id="standard-basic"
+                label="Email"
+                name="email"
+                variant="standard"
+                onChange={handleInp}
+                value={order.email}
+              />
+              <br />
+            </Box>
+            <input type="checkbox" /> I confirm
+          </Modal.Body>
+          <Modal.Footer>
+            <Stack direction="row" spacing={2}>
+              <Button
+                onClick={() => {
+                  addOrder(order);
+                  handleClose();
+                  cartCleaner();
+                  navigate("/clothes");
+                }}
+                color="error"
+                variant="contained"
+                endIcon={<SendIcon />}
+              >
+                Order
+              </Button>
+            </Stack>
+          </Modal.Footer>
+        </Modal>
       </Typography>
     </>
   );
