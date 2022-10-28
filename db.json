@@ -3,7 +3,7 @@
     {
       "title": "Nike Air Force 1'07 ",
       "desc": "Men's shoes",
-      "price": 350,
+      "price": 320,
       "img": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/350e7f3a-979a-402b-9396-a8a998dd76ab/air-force-1-07-mens-shoes-xDpsTk.png",
       "type": "men",
       "category": "shoes",
@@ -440,6 +440,15 @@
       "type": "women",
       "category": "skirts",
       "id": "50"
+    },
+    {
+      "title": "Sam",
+      "desc": "",
+      "price": "",
+      "img": "",
+      "type": "",
+      "category": "",
+      "id": "WTZBD11"
     }
   ],
   "orders": [
@@ -460,6 +469,12 @@
       "phone": "555218",
       "email": "kuba@gmail.com",
       "id": 3
+    },
+    {
+      "name": "Sam",
+      "phone": "545",
+      "email": "sam@gmail.com",
+      "id": 4
     }
   ]
 }

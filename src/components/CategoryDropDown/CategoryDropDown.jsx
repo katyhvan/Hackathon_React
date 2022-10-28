@@ -1,27 +1,19 @@
 import React from "react";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { useNavigate } from "react-router-dom";
 import { useClothes } from "../../contexts/ClothesContextProvider";
 
 const CategoryDropDown = () => {
   const { fetchByParams } = useClothes();
-  const navigate = useNavigate();
 
   return (
     <>
       <div>
         <NavDropdown
+          style={{ marginLeft: "40%", marginTop: "1%", fontSize: "20px" }}
           id="nav-dropdown-dark-example"
           title="Categories"
           menuVariant="dark"
-          onChange={(e) => fetchByParams("category", e.target.value)}
         >
-          <NavDropdown.Item
-            value="all"
-            onClick={(e) => fetchByParams("category", "all")}
-          >
-            All
-          </NavDropdown.Item>
           <NavDropdown.Item
             onClick={(e) => fetchByParams("category", "jackets")}
           >
@@ -52,6 +44,12 @@ const CategoryDropDown = () => {
             onClick={(e) => fetchByParams("category", "accessories")}
           >
             Accessories
+          </NavDropdown.Item>
+          <NavDropdown.Item
+            value="all"
+            onClick={(e) => fetchByParams("category", "all")}
+          >
+            All
           </NavDropdown.Item>
         </NavDropdown>
       </div>

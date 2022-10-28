@@ -146,14 +146,15 @@ export default function Cart() {
         </Table>
       </TableContainer>
       <Typography
+      className="total-price"
         variant="h6"
         component="div"
         style={{ textAlign: "right", marginRight: "15%" }}
       >
         Total price: {cart?.totalPrice}
-        <Button className="btn-buy" onClick={handleShow}>
+        <button className="btn-buy" onClick={handleShow}>
           BUY NOW
-        </Button>
+        </button>
         <Modal className="modalka" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Order Form</Modal.Title>

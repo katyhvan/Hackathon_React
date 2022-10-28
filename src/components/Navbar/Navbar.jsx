@@ -13,10 +13,16 @@ import "../../styles/Navbar.css";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { useSearchParams } from "react-router-dom";
 import { useClothes } from "../../contexts/ClothesContextProvider";
-import HomeIcon from "@mui/icons-material/Home";
 import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
 
+import HomeIcon from "@mui/icons-material/Home";
+import Logo from "./Logo";
+
 const pages = [
+  {
+    type: <Logo />,
+    path: "/",
+  },
   {
     type: <HomeIcon />,
     path: "/",
@@ -29,11 +35,8 @@ const pages = [
     type: "Admin",
     path: "/admin",
   },
-  {
-    type: <CategoryDropDown />,
-    path: "/category",
-  },
 ];
+
 const cartPage = [
   {
     path: "/cart",
@@ -94,13 +97,6 @@ function Navbar() {
     <>
       <div className="header">
         <div className="navbar-left">
-          <img
-            className="logo-img"
-            src="https://miro.medium.com/max/900/0*9hcinRdaHicrNpNE.jpg"
-            alt="Logo"
-            width="50"
-            onClick={() => navigate("/")}
-          />
           <div
             className="burger-menu"
             onClick={() => setMenuActive(!menuActive)}
@@ -119,6 +115,9 @@ function Navbar() {
                 {page.type}
               </li>
             ))}
+            <li style={{ cursor: "pointer" }} className="item-menu">
+              {<CategoryDropDown />}
+            </li>
           </ul>
         </div>
         <div
@@ -145,9 +144,6 @@ function Navbar() {
                 <Avatar
                   style={{
                     cursor: "pointer",
-                    fontSize: "2vw",
-                    width: "3vw",
-                    height: "3vw",
                   }}
                   alt={user}
                   src="/static/images/avatar/2.jpg"
@@ -189,7 +185,7 @@ function Navbar() {
           </Box>
           {cartPage.map((cartP) => (
             <ShoppingCartIcon
-              style={{ cursor: "pointer", fontSize: "2vw" }}
+              style={{ cursor: "pointer" }}
               className="cart-icon"
               onClick={() => navigate(cartP.path)}
             />

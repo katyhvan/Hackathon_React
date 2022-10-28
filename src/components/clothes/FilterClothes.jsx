@@ -9,7 +9,7 @@ export default function ControlledRadioButtonsGroup() {
   const { fetchByParams } = useClothes();
 
   return (
-    <FormControl style={{ marginLeft: "2%" }}>
+    <FormControl style={{ marginLeft: "50%" }}>
       <RadioGroup
         aria-labelledby="demo-controlled-radio-buttons-group"
         name="controlled-radio-buttons-group"

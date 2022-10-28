@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useClothes } from "../../contexts/ClothesContextProvider";
-// import { useSearchParams } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
 
 import ClothesCard from "./ClothesCard";
@@ -32,7 +31,7 @@ const ClothesList = () => {
 
   return (
     <>
-      <FilterClothes />
+      <FilterClothes className="filter-radio" />
       <div
         style={{
           margin: "20px",
