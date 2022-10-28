@@ -19,3 +19,85 @@
     z-index: 100;
   }
 }
+
+@media (max-width: 600px) {
+  .RegisterForm,
+  .LoginForm {
+    /* transform: translateX(0) translateY(-5%); */
+    max-height: 380px;
+    max-width: 450px;
+  }
+
+  .userNameInp,
+  .passwordInp {
+    max-width: 350px;
+  }
+
+  .buttonRegister {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .RegisterForm,
+  .LoginForm {
+    max-height: 320px;
+    max-width: 380px;
+  }
+
+  .userNameInp,
+  .passwordInp {
+    max-width: 300px;
+  }
+
+  .buttonRegister {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .RegisterForm,
+  .LoginForm {
+    max-height: 310px;
+    max-width: 320px;
+  }
+
+  .userNameInp,
+  .passwordInp {
+    max-width: 220px;
+  }
+
+  .buttonRegister {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  .RegisterForm,
+  .LoginForm {
+    max-height: 290px;
+    max-width: 280px;
+    font-size: 15px;
+    font-family: "Roboto";
+  }
+
+  .userNameInp,
+  .passwordInp {
+    max-width: 210px;
+    font-size: 12px;
+  }
+
+  .buttonRegister {
+    max-width: 210px;
+    /* padding: 10px; */
+    font-size: 14px;
+    font-family: "Roboto";
+  }
+}
+
+@media all and(min-width: 400px) {
+  .tableContainer {
+    width: 400px;
+    flex-flow: column-reverse;
+  }
+}

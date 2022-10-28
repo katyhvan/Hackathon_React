@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContextProvider";
-import "../styles/Register.css";
+import "../styles/LoginPage.css";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -10,6 +10,21 @@ const LoginPage = () => {
 
   function handleLogin() {
     login(username, password);
+
+    if (!username || !password) {
+      alert("Some inputs are empty!");
+      return;
+    }
+
+    let newAuth = {
+      username,
+      password,
+    };
+    if (username || password !== newAuth) {
+      alert("Password or username does not match!");
+      return;
+    }
+    LoginPage(newAuth);
   }
 
   return (

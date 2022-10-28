@@ -42,6 +42,7 @@ const cartPage = [
     path: "/cart",
   },
 ];
+
 const settings = [
   {
     type: "Register",
@@ -115,7 +116,10 @@ function Navbar() {
                 {page.type}
               </li>
             ))}
-            <li style={{ cursor: "pointer" }} className="item-menu">
+            <li
+              style={{ cursor: "pointer", fontFamily: "Roboto" }}
+              className="item-menu"
+            >
               {<CategoryDropDown />}
             </li>
           </ul>
@@ -142,9 +146,7 @@ function Navbar() {
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
-                  style={{
-                    cursor: "pointer",
-                  }}
+                  className="register-avatar"
                   alt={user}
                   src="/static/images/avatar/2.jpg"
                 />

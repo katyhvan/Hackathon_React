@@ -9,7 +9,7 @@ const CategoryDropDown = () => {
     <>
       <div>
         <NavDropdown
-          style={{ marginLeft: "40%", marginTop: "1%", fontSize: "20px" }}
+          style={{ marginLeft: "40%", marginTop: "1%", fontFamily: "Roboto" }}
           id="nav-dropdown-dark-example"
           title="Categories"
           menuVariant="dark"

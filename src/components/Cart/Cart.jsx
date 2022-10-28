@@ -14,6 +14,8 @@ import Modal from "react-bootstrap/Modal";
 import Box from "@mui/material/Box";
 import SendIcon from "@mui/icons-material/Send";
 import Stack from "@mui/material/Stack";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 import "../../styles/Cart.css";
 
 import { useCart } from "../../contexts/CartContextProvider";
@@ -93,8 +95,8 @@ export default function Cart() {
 
   return (
     <>
-      <TableContainer component={Paper} style={{ marginTop: "50px" }}>
-        <Table sx={{ minWidth: 1000 }} aria-label="customized table">
+      <TableContainer className="cart-table" component={Paper}>
+        <Table aria-label="customized table">
           <TableHead style={{ textAlign: "center" }}>
             <TableRow>
               <StyledTableCell>Image</StyledTableCell>
@@ -109,7 +111,11 @@ export default function Cart() {
           <TableBody>
             {cart?.clothes.map((row) => (
               <StyledTableRow key={row.item.id}>
-                <StyledTableCell component="th" scope="row">
+                <StyledTableCell
+                  className="cart-img"
+                  component="th"
+                  scope="row"
+                >
                   <img src={row.item.img} alt="image" width="50" />
                 </StyledTableCell>
                 <StyledTableCell align="right">
@@ -137,7 +143,7 @@ export default function Cart() {
                     variant="contained"
                     onClick={() => deleteClotheInCart(row.item.id)}
                   >
-                    Delete from cart
+                    <DeleteIcon />
                   </Button>
                 </StyledTableCell>
               </StyledTableRow>
@@ -146,7 +152,7 @@ export default function Cart() {
         </Table>
       </TableContainer>
       <Typography
-      className="total-price"
+        className="total-price"
         variant="h6"
         component="div"
         style={{ textAlign: "right", marginRight: "15%" }}

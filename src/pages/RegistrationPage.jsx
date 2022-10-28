@@ -9,7 +9,18 @@ const RegistrationPage = () => {
   const { register } = useAuth();
 
   function handleRegister() {
+    if (!username || !password) {
+      alert("Some inputs are empty!");
+      return;
+    }
     register(username, password);
+    alert("Registered successfully!");
+    let newAuth = {
+      username,
+      password,
+    };
+
+    RegistrationPage(newAuth);
   }
 
   return (
