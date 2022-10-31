@@ -93,6 +93,15 @@ export default function Cart() {
   };
   const handleShow = () => setShow(true);
 
+  const checkCart = () => {
+    if (cart.length === 0) {
+      alert("Cart is empty! Please add some article!");
+      return;
+    } else {
+      handleShow();
+    }
+  };
+
   return (
     <>
       <TableContainer className="cart-table" component={Paper}>
@@ -158,7 +167,12 @@ export default function Cart() {
         style={{ textAlign: "right", marginRight: "15%" }}
       >
         Total price: {cart?.totalPrice}
-        <button className="btn-buy" onClick={handleShow}>
+        <button
+          className="btn-buy"
+          onClick={() => {
+            checkCart();
+          }}
+        >
           BUY NOW
         </button>
         <Modal className="modalka" show={show} onHide={handleClose}>

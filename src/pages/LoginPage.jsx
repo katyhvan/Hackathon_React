@@ -20,10 +20,7 @@ const LoginPage = () => {
       username,
       password,
     };
-    if (username || password !== newAuth) {
-      alert("Password or username does not match!");
-      return;
-    }
+
     LoginPage(newAuth);
   }
 

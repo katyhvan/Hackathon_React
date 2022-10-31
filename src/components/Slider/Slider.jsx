@@ -8,7 +8,7 @@ function Slider() {
         height: "70vh",
         width: "80%",
         overflow: "hidden",
-        margin: "50px auto",
+        margin: "20px auto",
       }}
     >
       <Carousel.Item interval={1500}>

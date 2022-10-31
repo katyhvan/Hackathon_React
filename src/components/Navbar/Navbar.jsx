@@ -120,7 +120,7 @@ function Navbar() {
               style={{ cursor: "pointer", fontFamily: "Roboto" }}
               className="item-menu"
             >
-              {<CategoryDropDown />}
+              {<CategoryDropDown onClick={() => navigate("/category")} />}
             </li>
           </ul>
         </div>

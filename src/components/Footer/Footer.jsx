@@ -23,27 +23,27 @@ const Footer = () => {
         >
           <div>
             <TwitterIcon
-              style={{ color: "#fff", marginRight: "10px" }}
+              style={{ color: "#fff", marginRight: "10px", cursor: "pointer" }}
               onClick={() => window.open("https://twitter.com/Nike")}
             />
             <FacebookIcon
-              style={{ color: "#fff", marginRight: "10px" }}
+              style={{ color: "#fff", marginRight: "10px", cursor: "pointer" }}
               onClick={() => window.open("https://www.facebook.com/nike")}
             />
             <YouTubeIcon
-              style={{ color: "#fff", marginRight: "10px" }}
+              style={{ color: "#fff", marginRight: "10px", cursor: "pointer" }}
               onClick={() => window.open("https://www.youtube.com/user/nike")}
             />
             <InstagramIcon
-              style={{ color: "#fff", marginRight: "10px" }}
+              style={{ color: "#fff", marginRight: "10px", cursor: "pointer" }}
               onClick={() => window.open("https://www.instagram.com/nike/")}
             />
           </div>
         </Container>
-        <div style={{ textAlign: "center", margin: "10px" }}>
+        <div style={{ textAlign: "center", margin: "10px", cursor: "pointer" }}>
           <span style={{ marginRight: "20px" }}>
             <LocationOnIcon
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "10px", cursor: "pointer" }}
               onClick={() => window.open("https://jobs.nike.com/nyc")}
             />
             United States

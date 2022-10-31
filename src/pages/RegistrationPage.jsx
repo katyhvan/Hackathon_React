@@ -14,7 +14,7 @@ const RegistrationPage = () => {
       return;
     }
     register(username, password);
-    alert("Registered successfully!");
+    // alert("Registered successfully!");
     let newAuth = {
       username,
       password,
